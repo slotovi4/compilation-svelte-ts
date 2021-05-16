@@ -70,7 +70,8 @@ export default {
 		commonjs(),
 		typescript({
 			sourceMap: !isProduction,
-			inlineSources: !isProduction
+			inlineSources: !isProduction,
+			baseUrl: '.'
 		}),
 		aliases,
 
