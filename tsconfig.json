@@ -1,0 +1,33 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"baseUrl": ".",
+	"outDir": "build/dist",
+	"module": "esnext",
+	"target": "ES6",
+	"lib": [
+		"es6",
+		"dom"
+	],
+	"sourceMap": true,
+	"allowJs": true,
+	"moduleResolution": "node",
+	"rootDir": "src",
+	"forceConsistentCasingInFileNames": true,
+	"noImplicitReturns": true,
+	"noImplicitThis": true,
+	"noImplicitAny": true,
+	"strictNullChecks": true,
+	"suppressImplicitAnyIndexErrors": true,
+	"noUnusedLocals": true,
+	"allowSyntheticDefaultImports": true,
+	"paths": {},
+	"include": [
+		"src/**/*",
+		"rollup.config.ts"
+	],
+	"exclude": [
+		"node_modules/*",
+		"__sapper__/*",
+		"public/*"
+	]
+}
