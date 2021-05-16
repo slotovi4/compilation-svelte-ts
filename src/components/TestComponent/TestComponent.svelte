@@ -1,16 +1,16 @@
 <script lang="ts">
-	export const props: IProps | null = null;
-	
+	export let props: IProps | null = null;
+
 	interface IProps {
 		text: string;
 		number: number;
-		onButtonclick: (newNumber: IProps['number']) => void;
+		onButtonclick: () => void;
 	}
 </script>
 
 <section>
-	<span>{props.text} - {props.number}</span>
-	<button></button>
+	<span>{props?.text || ''} - {props?.number || ''}</span>
+	<button on:click={props?.onButtonclick}>click</button>
 </section>
 
 <style type="text/scss">
