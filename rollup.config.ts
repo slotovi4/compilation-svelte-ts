@@ -13,6 +13,7 @@ const isProduction = !process.env.ROLLUP_WATCH;
 const aliases = alias({
 	entries: [
 		{ find: 'components', replacement: 'src/components/index.ts' },
+		{ find: 'store', replacement: 'src/store/index.ts' },
 	]
 });
 
