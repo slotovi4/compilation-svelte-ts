@@ -30,5 +30,5 @@
 </main>
 
 <style type="text/scss">
-	@import "./App.scss";
+	@import "./HomePage.scss";
 </style>

@@ -13,6 +13,7 @@ const isProduction = !process.env.ROLLUP_WATCH;
 const aliases = alias({
 	entries: [
 		{ find: 'components', replacement: 'src/components/index.ts' },
+		{ find: 'pages', replacement: 'src/pages/index.ts' },
 		{ find: 'store', replacement: 'src/store/index.ts' },
 	]
 });
@@ -27,7 +28,6 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) { return; }
-			// eslint-disable-next-line @typescript-eslint/no-var-requires
 			server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true

@@ -1,6 +1,6 @@
-import { App } from 'components';
+import { HomePage } from 'pages';
 
-const app = new App({
+const app = new HomePage({
 	target: document.body,
 	props: {
 		name: 'world'
